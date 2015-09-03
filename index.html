@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GA tracking test page</title>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-XXXX-Y', {
+  'cookieDomain': 'none'
+  });
+
+  ga('send', 'pageview');
+
+</script>
+  </head>
+
+  <body>
+    <img src="https://dn3pm25xmtlyu.cloudfront.net/photos/large/801204039.jpg?1376828398&Expires=1441367684&Signature=EIZ7PjofgNJ-H1jyUBk7Tn9duRSI92u6EDE2dSyeOw2~OLQ-W8LKHzxTVgC3kgDgCfzg2Hj4knaL9e55woLlhHH0zuCZQsP9Zv1mbJuQ-JnWDyCXG~7FUEEUPK5qnNcF9Qt7PKgPN6ReboQO2XaBTEsWcB1NVppMegXp2zmYGcA_&Key-Pair-Id=APKAIYVGSUJFNRFZBBTA"/>
+
+    <button id="button"></button>
+
+    <script type="text/javascript">
+      $('#button').on('click', function(e) {
+        ga('send', 'event', 'button', 'click', 'yes', 4);
+      });
+    </script>
+
+    <script type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    </script>
+
+  </body>
+ </html>
